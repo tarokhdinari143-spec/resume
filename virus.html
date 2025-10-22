@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>رزومه تارخ دیناری</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #e0eafc);
+      margin: 0;
+      padding: 0;
+      color: #333;
+      text-align: center;
+    }
+
+    .show-button {
+      margin-top: 100px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .show-button:hover {
+      background-color: #005fa3;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      display: none;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 30px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+
+    section {
+      padding: 25px 35px;
+      border-bottom: 1px solid #eee;
+      text-align: right;
+    }
+
+    section:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      color: #0077cc;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 30px;
+    }
+
+    .info-grid div {
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #0077cc;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin: 5px 5px 0 0;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="show-button" onclick="document.querySelector('.container').style.display='block'; this.style.display='none';">
+    👀 نمایش رزومه
+  </button>
+
+  <div class="container">
+    <header>
+      <h1>تارخ دیناری</h1>
+      <p>دانش‌آموز پایه یازدهم | هنرستان امام حسین (ع)</p>
+    </header>
+
+    <section>
+      <h2>اطلاعات تماس</h2>
+      <div class="info-grid">
+        <div><strong>تاریخ تولد:</strong> 1388/01/23</div>
+        <div><strong>استان:</strong> لرستان</div>
+        <div><strong>شماره تماس:</strong> 09166688202</div>
+        <div><strong>ایمیل:</strong> tarokhdinari143@gmail.com</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>مهارت‌ها</h2>
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <span class="tag">طراحی صفحات وب ساده</span>
+    </section>
+
+    <section>
+      <h2>پروژه‌ها</h2>
+      <ul>
+        <li><strong>ساخت سایت ساده:</strong> طراحی و پیاده‌سازی یک وب‌سایت ابتدایی با HTML و CSS شامل صفحات معرفی و فرم تماس</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>زبان‌ها</h2>
+      <ul>
+        <li>فارسی (مسلط)</li>
+        <li>انگلیسی (در حد خواندن مستندات فنی)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>اهداف شغلی</h2>
+      <ul>
+        <li>همکاری با تیم‌های توسعه نرم‌افزار برای یادگیری و رشد حرفه‌ای</li>
+        <li>مشارکت در پروژه‌های امنیت سایبری و توسعه اپلیکیشن</li>
+        <li>کسب تجربه در محیط‌های واقعی و آماده‌سازی برای مهاجرت تحصیلی</li>
+        <li>یادگیری مستمر برای رسیدن به سطح حرفه‌ای و انجام پروژه‌های واقعی و تخصصی</li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>
